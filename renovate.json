@@ -1,0 +1,75 @@
+{
+  "addLabels": ["dependencies"],
+  "commitMessagePrefix": "⬆️: ",
+  "extends": ["config:base", ":preserveSemverRanges"],
+  "timezone": "Asia/Tokyo",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 20:00 on sunday"]
+  },
+  "packageRules": [
+    {
+      "groupName": "Expo upgrade",
+      "enabled": false,
+      "matchPackageNames": [
+        "@react-native-community/masked-view",
+        "expo",
+        "expo-splash-screen",
+        "expo-updates",
+        "react",
+        "react-dom",
+        "react-native",
+        "react-native-gesture-handler",
+        "react-native-reanimated",
+        "react-native-safe-area-context",
+        "react-native-screens",
+        "react-native-unimodules",
+        "react-native-web",
+        "@babel/core",
+        "@types/react",
+        "@types/react-dom",
+        "@types/react-native",
+        "babel-preset-expo",
+        "jest-expo",
+        "typescript",
+        "@react-native-community/datetimepicker",
+        "@react-native-community/netinfo",
+        "expo-application",
+        "expo-file-system",
+        "expo-image-manipulator",
+        "expo-image-picker",
+        "expo-random",
+        "expo-secure-store",
+        "react-native-svg",
+        "react-native-webview"
+      ]
+    },
+    {
+      "groupName": "Depends on Expo version",
+      "enabled": false,
+      "matchPackageNames": [
+        "@types/jest",
+        "@types/react-test-renderer",
+        "gradle"
+      ]
+    },
+    {
+      "groupName": "React Navigation",
+      "matchPackagePrefixes": ["@react-navigation/"]
+    },
+    {
+      "groupName": "Tools",
+      "matchPackageNames": [
+        "@testing-library/react-native",
+        "@typescript-eslint/eslint-plugin",
+        "@typescript-eslint/parser",
+        "eslint",
+        "eslint-config-universe",
+        "jest-junit",
+        "npm-run-all",
+        "prettier"
+      ],
+      "matchPackagePrefixes": ["markdownlint", "textlint"]
+    }
+  ]
+}
