@@ -1,0 +1,12 @@
+{
+  "name": "renovateCheck",
+  "displayName": "renovateCheck",
+  "expo": {
+    "name": "renovateCheck",
+    "slug": "renovateCheck",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
